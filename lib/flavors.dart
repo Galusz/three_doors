@@ -15,7 +15,7 @@ class F {
       case Flavor.DEV:
         return 'Three Doors Dev';
       default:
-        return 'Three Doors';
+        return 'title';
     }
   }
 

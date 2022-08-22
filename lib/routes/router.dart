@@ -7,7 +7,7 @@ import 'package:three_doors/pages/three_doors_page.dart';
 @MaterialAutoRouter(
   replaceInRouteName: 'Page,Route',
   routes: <AutoRoute>[
-    AutoRoute(page: WelcomeScreen, initial: true),
+    AutoRoute(page: SplashPage, initial: true),
     AutoRoute(page: ThreeDoorsPage, path: '/main'),
     AutoRoute(page: ResultPage, path: '/result'),
   ],

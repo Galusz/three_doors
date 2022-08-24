@@ -15,8 +15,8 @@ import 'package:auto_route/auto_route.dart' as _i4;
 import 'package:flutter/material.dart' as _i5;
 
 import '../pages/result_page.dart' as _i3;
-import '../pages/three_doors_page.dart' as _i2;
-import '../pages/welcome_screen.dart' as _i1;
+import '../pages/splash_page.dart' as _i1;
+import '../pages/three_doors_page/three_doors_page.dart' as _i2;
 
 class AppRouter extends _i4.RootStackRouter {
   AppRouter([_i5.GlobalKey<_i5.NavigatorState>? navigatorKey])
@@ -24,9 +24,9 @@ class AppRouter extends _i4.RootStackRouter {
 
   @override
   final Map<String, _i4.PageFactory> pagesMap = {
-    WelcomeScreen.name: (routeData) {
+    SplashRoute.name: (routeData) {
       return _i4.MaterialPageX<dynamic>(
-          routeData: routeData, child: _i1.WelcomeScreen());
+          routeData: routeData, child: _i1.SplashPage());
     },
     ThreeDoorsRoute.name: (routeData) {
       return _i4.MaterialPageX<dynamic>(
@@ -40,18 +40,18 @@ class AppRouter extends _i4.RootStackRouter {
 
   @override
   List<_i4.RouteConfig> get routes => [
-        _i4.RouteConfig(WelcomeScreen.name, path: '/'),
+        _i4.RouteConfig(SplashRoute.name, path: '/'),
         _i4.RouteConfig(ThreeDoorsRoute.name, path: '/main'),
         _i4.RouteConfig(ResultRoute.name, path: '/result')
       ];
 }
 
 /// generated route for
-/// [_i1.WelcomeScreen]
-class WelcomeScreen extends _i4.PageRouteInfo<void> {
-  const WelcomeScreen() : super(WelcomeScreen.name, path: '/');
+/// [_i1.SplashPage]
+class SplashRoute extends _i4.PageRouteInfo<void> {
+  const SplashRoute() : super(SplashRoute.name, path: '/');
 
-  static const String name = 'WelcomeScreen';
+  static const String name = 'SplashRoute';
 }
 
 /// generated route for

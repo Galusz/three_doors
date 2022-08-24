@@ -25,6 +25,7 @@ dependencies:
     sdk: flutter
   auto_route:
   cupertino_icons: ^1.0.2
+  flutter_bloc:
 
 dev_dependencies:
   flutter_test:
@@ -85,5 +86,3 @@ flavorizr:
 
 flutter:
   uses-material-design: true
-  assets:
-    - assets/images/
